@@ -44,6 +44,10 @@ nav img {
   border: 1px solid grey;
   border-radius: 4px;
 }
+.opt{
+  display: flex;
+  justify-content: center;
+}
 #sel {
   background-color: transparent;
   color: white;
@@ -51,6 +55,7 @@ nav img {
   font-size: 16px;
   padding: 0px 2px;
   padding-right: 8px;
+  outline: none;
 }
 .lang:hover {
   border: 2px solid white;
@@ -344,65 +349,82 @@ ul li {
 
 /* Responsive */
 
-@media only screen and (max-width: 430px) {
-  body{
-    overflow-x: hidden;
-  }
+@media only screen and (max-width: 730px) and (min-width: 430px) {
   #main{
-    height: 50vh;
+    height: 130vh;
+    width: 252vw;
   }
   nav img{
-    width: 32%;
-    transform: translate(25px,0px);
+    width: 74%;
+    transform: translate(60px,40px);
   }
   nav{
     width: 100%;
   }
   #right{
-    height: 10%;
-    width: 180px;
-    transform: translate(-26px,0);
-    gap: 6px;
+    height: 100%;
+    width: 420px;
+    transform: translate(-4px,40px);
+    gap: 9px;
   }
   .lang{
-    width: 50%;
-    height: 30px;
+    width: 38%;
+    height: 80px;
   }
   .lang img{
-    transform: translate(2px);
-    width: 37%;
+    transform: translate(14px,0);
+    width: 30%;
   }
   #sel{
     width: 20px;
-    transform: translate(9px);
+    transform: translate(19px);
+    font-size: 10px;
+  }
+  .opt{
+    transform: scale(2.25);
   }
   #signin-btn{
-    width: 50%;
-    height: 30px;
-    font-size: 12px;
-    font-weight: bold;
+    width: 40%;
+    height: 80px;
+    font-size: 30px;
+    transform: translate(-60px);
   }
   .container{
-    width: 80%;
+    width: 88%;
   }
   .container h1{
-    font-size: 28px;
+    margin-top: 40px;
+    font-size: 70px;
   }
   .container h3{
-    font-size: 16px;
+    font-size: 40px;
+    padding: 47px 0px;
   }
   .container p{
-    font-size: 18px;
+    font-size: 46px;
+    padding-bottom: 44px;
   }
   #email{
-    width: 80vw;
-  }
-  form{
-    padding-bottom: 28px;
+    padding: 38px;
+    width: 200vw;
+    height: 13vh;
+    font-size: 37px;
   }
   #signup{
-    width: 158px;
-    font-size: 16px;
-    transform: translate(0px,20px);
+    width: 43vh;
+    height: 13vh;
+    font-size: 46px;
+    transform: translate(0px,30px);
+  }
+  .line{
+    width: 253vw;
+    height: 20px;
+  }
+  #asset1{
+    flex-direction: column;
+  }
+  #asset1 h2{
+    font-size: 28px;
+    width: 100vh;
   }
 }

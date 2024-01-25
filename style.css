@@ -344,13 +344,12 @@ ul li {
 
 /* Responsive */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 430px) {
   body{
     overflow-x: hidden;
   }
   #main{
     height: 50vh;
-    width: 300vw;
   }
   nav img{
     width: 32%;

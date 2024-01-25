@@ -350,6 +350,7 @@ ul li {
   }
   #main{
     height: 50vh;
+    width: 300vw;
   }
   nav img{
     width: 32%;

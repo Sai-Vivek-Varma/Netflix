@@ -14,7 +14,7 @@ body {
   width: 100%;
   height: 96vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)),
-    url("Netflix/main.jpg");
+    url("./main.jpg");
   /* transform: scale(1.25) translateY(-22%);     */
   background-size: cover;
 }
@@ -340,4 +340,66 @@ ul li {
 #end {
   padding: 20px;
   padding-bottom: 50px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+  #main{
+    height: 50vh;
+  }
+  nav img{
+    width: 32%;
+    transform: translate(25px,0px);
+  }
+  nav{
+    width: 100%;
+  }
+  #right{
+    height: 10%;
+    width: 180px;
+    transform: translate(-26px,0);
+    gap: 6px;
+  }
+  .lang{
+    width: 50%;
+    height: 30px;
+  }
+  .lang img{
+    transform: translate(2px);
+    width: 37%;
+  }
+  #sel{
+    width: 20px;
+    transform: translate(9px);
+  }
+  #signin-btn{
+    width: 50%;
+    height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .container{
+    width: 80%;
+  }
+  .container h1{
+    font-size: 28px;
+  }
+  .container h3{
+    font-size: 16px;
+  }
+  .container p{
+    font-size: 18px;
+  }
+  #email{
+    width: 80vw;
+  }
+  form{
+    padding-bottom: 28px;
+  }
+  #signup{
+    width: 158px;
+    font-size: 16px;
+    transform: translate(0px,20px);
+  }
 }

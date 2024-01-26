@@ -10,20 +10,23 @@ body {
   color: white;
   overflow-x: hidden;
 }
-#main {
-  width: 100%;
-  height: 96vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)),
-    url("Netflix/main.jpg");
-  /* transform: scale(1.25) translateY(-22%);     */
+#main::before{
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 107vh;
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0),rgba(0,0,0,0.8)),url("./Netflix/main.jpg");
+  transform: scale(1.25) translateY(-18%);    
   background-size: cover;
+  opacity: .76;
+  z-index: -1;
 }
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 25px 0px;
-  width: 76vw;
+  width: 76%;
   margin: auto;
 }
 
@@ -75,11 +78,9 @@ nav img {
   background-color: rgba(255, 0, 0, 0.7);
 }
 .container {
-  position: relative;
-  top: 44%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 100vw;
+  height: 100%;
+  padding: 12%;
   text-align: center;
 }
 
@@ -308,9 +309,6 @@ input:focus {
 .element:hover {
   background-color: rgba(177, 176, 176, 0.344);
 }
-#down {
-  margin-top: 100px;
-}
 #base {
   display: flex;
   flex-direction: column;
@@ -322,6 +320,9 @@ input:focus {
 a,
 .wrapper a {
   color: rgba(255, 255, 255, 0.7);
+}
+.container2{
+  padding: 4%;
 }
 ul {
   display: flex;
@@ -345,86 +346,4 @@ ul li {
 #end {
   padding: 20px;
   padding-bottom: 50px;
-}
-
-/* Responsive */
-
-@media only screen and (max-width: 730px) and (min-width: 430px) {
-  #main{
-    height: 130vh;
-    width: 252vw;
-  }
-  nav img{
-    width: 74%;
-    transform: translate(60px,40px);
-  }
-  nav{
-    width: 100%;
-  }
-  #right{
-    height: 100%;
-    width: 420px;
-    transform: translate(-4px,40px);
-    gap: 9px;
-  }
-  .lang{
-    width: 38%;
-    height: 80px;
-  }
-  .lang img{
-    transform: translate(14px,0);
-    width: 30%;
-  }
-  #sel{
-    width: 20px;
-    transform: translate(19px);
-    font-size: 10px;
-  }
-  .opt{
-    transform: scale(2.25);
-  }
-  #signin-btn{
-    width: 40%;
-    height: 80px;
-    font-size: 30px;
-    transform: translate(-60px);
-  }
-  .container{
-    width: 88%;
-  }
-  .container h1{
-    margin-top: 40px;
-    font-size: 70px;
-  }
-  .container h3{
-    font-size: 40px;
-    padding: 47px 0px;
-  }
-  .container p{
-    font-size: 46px;
-    padding-bottom: 44px;
-  }
-  #email{
-    padding: 38px;
-    width: 200vw;
-    height: 13vh;
-    font-size: 37px;
-  }
-  #signup{
-    width: 43vh;
-    height: 13vh;
-    font-size: 46px;
-    transform: translate(0px,30px);
-  }
-  .line{
-    width: 253vw;
-    height: 20px;
-  }
-  #asset1{
-    flex-direction: column;
-  }
-  #asset1 h2{
-    font-size: 28px;
-    width: 100vh;
-  }
 }
